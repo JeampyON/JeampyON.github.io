@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101713">
+    <meta
+      name="description"
+      content="Portafolio de JeampyON: proyectos de desarrollo de software, estructuras de datos y aplicaciones web."
+    >
+    <title>JeampyON — Portafolio de desarrollo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#inicio" aria-label="JeampyON, inicio">
+          <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+          <span>JeampyON</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Navegación principal">
+          <a class="nav-link is-active" href="#inicio">Inicio</a>
+          <a class="nav-link" href="#proyectos">Proyectos</a>
+          <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </nav>
+
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Cambiar a tema claro"
+          aria-pressed="false"
+        >
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+          </svg>
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.2 15.5A8.5 8.5 0 0 1 8.5 3.8 8.5 8.5 0 1 0 20.2 15.5Z"></path>
+          </svg>
+          <span class="theme-label">Tema claro</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="contenido" class="page-layout">
+      <div class="main-column">
+        <section id="inicio" class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="status-dot"></span> PORTAFOLIO · DESARROLLO DE SOFTWARE · SISTEMAS</p>
+            <h1 id="hero-title">Hola, soy <span>JeampyON.</span></h1>
+            <p class="hero-description">
+              Soy estudiante de Ingeniería en Software en Ambato, Ecuador.
+              Me interesa construir soluciones digitales y aprender cómo funcionan
+              los sistemas que las hacen posibles.
+            </p>
+            <a class="hero-cta" href="#proyectos">
+              <span>Explorar proyectos</span>
+              <span class="hero-cta-arrow" aria-hidden="true">↓</span>
+            </a>
+          </div>
+          <div class="hero-decoration" aria-hidden="true">
+            <span class="terminal-prompt">~/jeampyon</span>
+            <span class="terminal-command"><span>$</span> whoami</span>
+            <span class="terminal-output">software_student</span>
+            <span class="terminal-command"><span>$</span> focus --now</span>
+            <span class="terminal-output">build · learn · repeat<span class="cursor">_</span></span>
+            <span class="hero-orbit orbit-one"></span>
+            <span class="hero-orbit orbit-two"></span>
+          </div>
+          <div class="hero-footnote" aria-label="Ubicación y enfoque">
+            <span>Ambato, Ecuador</span>
+            <span class="hero-footnote-divider" aria-hidden="true"></span>
+            <span>Software · Sistemas · Redes</span>
+          </div>
+        </section>
+
+        <section id="proyectos" class="articles-section" aria-labelledby="projects-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Desarrollo, arquitectura y aprendizaje técnico</p>
+              <h2 id="projects-title">Proyectos seleccionados</h2>
+            </div>
+            <span class="article-count">02 proyectos</span>
+          </div>
+
+          <div class="project-filters" role="group" aria-label="Filtrar proyectos por tecnología">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Todos</button>
+            <button class="filter-button" type="button" data-filter="django" aria-pressed="false">Django</button>
+            <button class="filter-button" type="button" data-filter="javascript" aria-pressed="false">JavaScript</button>
+            <button class="filter-button" type="button" data-filter="estructuras" aria-pressed="false">Estructuras de datos</button>
+          </div>
+
+          <div class="article-list project-list" aria-live="polite">
+            <article class="article-card project-card" data-category="django estructuras">
+              <div class="project-art project-art-smartfisei" aria-hidden="true">
+                <span class="project-art-index">01 / ACADÉMICO</span>
+                <span class="project-art-symbol">S<span>.</span></span>
+                <span class="project-art-caption">SMARTFISEI</span>
+                <span class="project-art-line"></span>
+              </div>
+              <div class="project-card-content">
+                <div class="article-meta">
+                  <span class="category-tag">Django · Python</span>
+                  <span class="category-tag">Estructuras de datos</span>
+                </div>
+                <h3>
+                  <button class="project-title-button project-open" type="button" data-project="smartfisei" aria-haspopup="dialog" aria-controls="project-dialog">
+                    SmartFISEI
+                  </button>
+                </h3>
+                <p class="project-subtitle">Sistema de Gestión Académica Institucional</p>
+                <p class="article-excerpt">
+                  Una plataforma para organizar trámites, servicios y recorridos dentro
+                  de la FISEI, aplicando estructuras de datos en un caso real.
+                </p>
+                <button class="project-open" type="button" data-project="smartfisei" aria-haspopup="dialog" aria-controls="project-dialog">
+                  Conocer el proyecto <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="article-card project-card" data-category="javascript">
+              <div class="project-art project-art-cinescope" aria-hidden="true">
+                <span class="project-art-index">02 / ENTRETENIMIENTO</span>
+                <span class="project-art-symbol">C<span>+</span></span>
+                <span class="project-art-caption">CINESCOPE</span>
+                <span class="project-art-line"></span>
+              </div>
+              <div class="project-card-content">
+                <div class="article-meta">
+                  <span class="category-tag">JavaScript</span>
+                  <span class="category-tag">Aplicación web</span>
+                </div>
+                <h3>
+                  <button class="project-title-button project-open" type="button" data-project="cinescope" aria-haspopup="dialog" aria-controls="project-dialog">
+                    CineScope
+                  </button>
+                </h3>
+                <p class="project-subtitle">Tu catálogo personal de películas y series</p>
+                <p class="article-excerpt">
+                  Una aplicación para explorar títulos, encontrar qué ver y guardar
+                  favoritos, con búsqueda, filtros y preferencias que se conservan.
+                </p>
+                <button class="project-open" type="button" data-project="cinescope" aria-haspopup="dialog" aria-controls="project-dialog">
+                  Conocer el proyecto <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </article>
+          </div>
+          <p class="search-results" role="status" aria-live="polite"></p>
+        </section>
+
+        <section id="sobre-mi" class="projects-note" aria-labelledby="profile-title">
+          <p class="eyebrow">Perfil</p>
+          <h2 id="profile-title">Sobre mí</h2>
+          <p>
+            Estudio Ingeniería en Software y me interesa crear soluciones útiles,
+            aprender nuevas tecnologías y trabajar en equipo. Vivo en Ambato, Ecuador.
+          </p>
+        </section>
+      </div>
+
+      <aside class="sidebar" aria-label="Información complementaria">
+        <section class="sidebar-card search-card" aria-labelledby="search-title">
+          <h2 id="search-title">Buscar</h2>
+          <form class="search-form" role="search">
+            <label class="visually-hidden" for="site-search">Buscar proyectos</label>
+            <input id="site-search" type="search" placeholder="¿Qué estás buscando?" autocomplete="off">
+            <button type="submit" aria-label="Buscar">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="11" cy="11" r="7"></circle>
+                <path d="m16 16 4 4"></path>
+              </svg>
+            </button>
+          </form>
+          <p class="search-hint">Busca por nombre, tecnología o descripción.</p>
+        </section>
+
+        <section class="sidebar-card" aria-labelledby="categories-title">
+          <h2 id="categories-title">Categorías</h2>
+          <ul class="category-list">
+            <li><a href="#proyectos" data-filter="django"><span>Django</span><span>01</span></a></li>
+            <li><a href="#proyectos" data-filter="javascript"><span>JavaScript</span><span>01</span></a></li>
+            <li><a href="#proyectos" data-filter="estructuras"><span>Estructuras de datos</span><span>01</span></a></li>
+          </ul>
+        </section>
+
+        <section class="sidebar-card about-card" aria-labelledby="about-title">
+          <h2 id="about-title">Conecta conmigo</h2>
+          <p>Encuéntrame y conoce más de mi trabajo.</p>
+          <div class="social-links">
+            <a href="https://github.com/JeampyON" target="_blank" rel="noopener noreferrer">
+              <span aria-hidden="true">↗</span> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/jeampierre-ortiz-5b1bb7271/" target="_blank" rel="noopener noreferrer">
+              <span aria-hidden="true">↗</span> LinkedIn
+            </a>
+            <a href="https://www.instagram.com/jeampii06/" target="_blank" rel="noopener noreferrer">
+              <span aria-hidden="true">↗</span> Instagram
+            </a>
+          </div>
+        </section>
+
+        <section id="contacto" class="contact-card" aria-labelledby="contact-title">
+          <span class="contact-icon" aria-hidden="true">✳</span>
+          <h2 id="contact-title">¿Hablamos?</h2>
+          <p>¿Tienes una idea o quieres conversar sobre tecnología? Conectemos.</p>
+          <a href="https://www.linkedin.com/in/jeampierre-ortiz-5b1bb7271/" target="_blank" rel="noopener noreferrer">
+            Contactar por LinkedIn <span aria-hidden="true">↗</span>
+          </a>
+        </section>
+      </aside>
+    </main>
+
+    <dialog id="project-dialog" class="project-dialog" aria-labelledby="dialog-title-smartfisei">
+      <div class="dialog-shell">
+        <div class="dialog-topline">
+          <span class="eyebrow"><span class="status-dot"></span> PROYECTO SELECCIONADO</span>
+          <button class="dialog-close" type="button" aria-label="Cerrar detalles">×</button>
+        </div>
+        <div class="dialog-content" data-project-details="smartfisei" hidden>
+          <p class="dialog-kicker">01 / SISTEMAS ACADÉMICOS</p>
+          <h2 id="dialog-title-smartfisei">SmartFISEI</h2>
+          <p class="dialog-lead">
+            Una plataforma web para acercar los servicios de la Facultad de Ingeniería
+            en Sistemas, Electrónica e Industrial a su comunidad universitaria.
+          </p>
+          <p>
+            El sistema organiza trámites y turnos, permite dar seguimiento a solicitudes
+            y representa dependencias y espacios de la facultad. El proyecto destaca por
+            integrar estructuras de datos clásicas en una aplicación web funcional,
+            conectando los conceptos académicos con necesidades institucionales.
+          </p>
+          <h3>¿Qué encontrarás?</h3>
+          <ul class="dialog-features">
+            <li>Gestión de turnos, historial y atención mediante colas y pilas.</li>
+            <li>Seguimiento de trámites y navegación de expedientes con listas enlazadas.</li>
+            <li>Organización jerárquica y búsqueda de dependencias con árboles.</li>
+            <li>Rutas entre espacios de la facultad usando grafos y Dijkstra.</li>
+          </ul>
+          <div class="dialog-tech"><span>Django</span><span>Python</span><span>Vis.js</span><span>Estructuras de datos</span></div>
+          <a class="repository-link" href="https://github.com/JeampyON/ProyectoFinal_Estructuras_Grupo04" target="_blank" rel="noopener noreferrer">
+            Explorar repositorio <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <div class="dialog-content" data-project-details="cinescope" hidden>
+          <p class="dialog-kicker">02 / APLICACIÓN DE ENTRETENIMIENTO</p>
+          <h2 id="dialog-title-cinescope">CineScope</h2>
+          <p class="dialog-lead">
+            Un catálogo web para descubrir películas y series y mantener en un solo
+            lugar los títulos que quieres ver o volver a disfrutar.
+          </p>
+          <p>
+            CineScope combina una interfaz responsive con herramientas prácticas para
+            encontrar contenido: busca por título, combina filtros de tipo, género y año,
+            ordena resultados y abre una ficha con información detallada. Los favoritos
+            y la preferencia de tema se conservan en el navegador.
+          </p>
+          <h3>¿Qué puedes hacer?</h3>
+          <ul class="dialog-features">
+            <li>Buscar títulos y combinar filtros para acotar el catálogo.</li>
+            <li>Ordenar resultados y consultar los detalles de cada título.</li>
+            <li>Guardar favoritos y recuperarlos en otra visita.</li>
+            <li>Cambiar entre temas claro y oscuro con preferencia persistente.</li>
+          </ul>
+          <div class="dialog-tech"><span>JavaScript</span><span>Sass</span><span>HTML</span><span>LocalStorage</span></div>
+          <a class="repository-link" href="https://github.com/MateoRonquillo/MyCdS-Proyecto" target="_blank" rel="noopener noreferrer">
+            Explorar repositorio <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </dialog>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>© <span id="current-year"></span> JeampyON. Hecho con curiosidad.</p>
+        <nav class="footer-socials" aria-label="Redes sociales">
+          <a href="https://github.com/JeampyON" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/jeampierre-ortiz-5b1bb7271/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
